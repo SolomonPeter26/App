@@ -1,5 +1,5 @@
 App::Application.routes.draw do
-    root :to => 'books#index'
+    root :to => 'users#index'
     resources :books
     resources :users
     resource :session
