@@ -1,10 +1,12 @@
 <h1 class="headings" align="center">Welcome <%=  %></h1>
+<p class="paragraph" align="right"><%= link_to "Logout", logout_path %></p>
+<br />
 <table class = "table" align="left" id="books">
     <thead>
       <tr>
         <th>Title</th>
         <th>Pages</th>
-      </tr>
+       </tr>
     </thead>
     <tbody>
         <% @books.each do |book| %>
