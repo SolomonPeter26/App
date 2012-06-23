@@ -1,21 +1,18 @@
 <h1 class="headings" align="center">Welcome <%=  %></h1>
-<table class = "table" align="left">
-  <tr>
-    <th>Title</th>
-    <th>Pages</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @books.each do |book| %>
-  <tr class = "telements">
-    <td class="rows"><%= book.title %></td>
-    <td class="rows"><%= book.pages %></td>
-    <td class="rows"><%= link_to 'Show', book %></td>
-  </tr>
-<% end %>
+<table class = "table" align="left" id="books">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Pages</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @books.each do |book| %>
+          <tr class = "telements">
+            <td class="rows"><%= link_to(book.title, book) %></td>
+            <td class="rows"><%= book.pages %></td>
+          </tr>
+        <% end %>
+    </tbody>
 </table>
-
-<br />
 
