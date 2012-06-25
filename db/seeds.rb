@@ -1,30 +1,24 @@
 
 #I had to explicitly write the OPenlibrary fetched data to the Data.txt file because the gem openlibrary was not being loaded into the environment. tried a lot on the issue but couldn't find a solution
 counter=0;
-
 b=Book.new
-File.open("/home/solomon/rails_project/App/db/Data.txt","r") do |infile|
-        while (line = infile.gets)
-            l="-----\n"
-                if(line == l)
-                counter = 0
-                     next
-                end
-           puts counter+=1
-            if(counter==1)
-                b.title=line
-            elsif(counter==3)    
-                b.ISBN_10=line
-            elsif(counter==4)
-                if(line!="\n")
-                    b.authors="\'"+ line +"\''"
-                end
-            elsif(counter==5)
-                b.pages=line
-            elsif(counter==6)
-                b.weight=line
-                b.save
-                b=Book.new
+
+File.open("db/ISBN.csv","r") do |infile|
+    line = infile.gets
+    while (line = infile.gets)
+            puts "#{counter}: #{line}"
+            details = Openlibrary::Data
+            book_details = details.find_by_isbn(Integer(line))
+            if not(book_details)
+                next
             end
-        end
+            b.title=String(book_details.title)
+            b.ISBN_10=String(book_details.identifiers['isbn_10'])
+            b.authors=String(book_details.authors)
+            b.pages=String(book_details.pages)
+            b.weight=String(book_details.weight)
+            b.save
+            b=Book.new
+       counter = counter + 1
+    end
 end
