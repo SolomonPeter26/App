@@ -1,6 +1,66 @@
-<h1>Editing book</h1>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Welcome to Books Application</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><%= link_to "Logout", logout_path %></li>
+          <li><%= link_to 'Back', books_path %></li>
+        </ul>
+      </div>
 
-<%= render 'form' %>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Show', @book %> |
-<%= link_to 'Back', books_path %>
+
+
+<div class="container">
+    <div class="row">
+      <div class="span7">
+      <h2><%= @book.users.size-1 %> other users liked <%= @book.title %></h2>
+      <h2>You have liked <%= @u.books.size  %> books!!</h2>
+          <table class = "display" align="left" id="liked">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Pages</th>
+                 </tr>
+              </thead>
+              <tbody>
+                  <% @i_lb.each do |book| %>
+                    <tr class = "telements">
+                      <td class="rows"><%= link_to(book.title, book) %></td>
+                      <td class="rows"><%= book.pages %></td>
+                    </tr>
+                  <% end %>
+              </tbody>
+          </table>
+      </div>
+      <div class="span5">
+        <h1>You may also Like </h1><br /><br />
+        <table class = "display" align="left" id="suggestions">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                 </tr>
+              </thead>
+              <tbody>
+                  <% @res.each do |book| %>
+                    <tr class = "telements">
+                      <td class="rows"><%= link_to(book.title, book) %></td>
+                    </tr>
+                  <% end %>
+              </tbody>
+          </table>
+      </div>
+    </div>
+</div>
+
+
+

@@ -4,7 +4,7 @@ class BooksController < ApplicationController
   # GET /books.json
   def index
     @books = Book.all
-
+    @user = User.find_by_id(session["user_id"])
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @books }
@@ -35,9 +35,51 @@ class BooksController < ApplicationController
 
   # GET /books/1/edit
   def edit
-    @book = Book.find(params[:id])
-
-  end
+        b = Book.find(params[:id])  #get Book
+        @book=b 
+        
+        user = User.find_by_id(session["user_id"]) #get user
+        @u = user
+        
+        @likedusers=[]                      #other users who liked it
+        
+            b.users.each do |t|
+                  @likedusers << t.username
+            end
+        
+        
+        s=@likedusers.select {|a| a.match(user.username)}  
+            if(s.size==0)
+                b.users << user 
+                b.save
+            end
+        
+        @i_lb=[] # Array I liked Books
+        @u_lb=[] # Array users like a particular book
+        user.books.each do |lik_bks|
+              @i_lb << lik_bks
+              lik_bks.users.each do |usl|
+                    if(usl.username != user.username )
+                      @u_lb << usl
+                    end
+              @u_lb=@u_lb.uniq
+              @bks=[]
+              end
+              @u_lb.each do |b|
+                b.books.each do |bk|
+                  @bks << bk
+                end
+              end
+        end
+        @bks=@bks.uniq
+          puts '=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-='          
+          puts @i_lb
+          puts '=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-='          
+          puts @bks
+          @res =  @bks - @i_lb
+          puts '=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-='          
+          puts @res
+end
 
   # POST /books
   # POST /books.json

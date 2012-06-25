@@ -6,3 +6,12 @@ jQuery ->
       sPaginationType: "full_numbers"
       bJQueryUI: true
 
+jQuery ->
+    $('#liked').dataTable
+      sPaginationType: "full_numbers"
+      bJQueryUI: true
+      
+jQuery ->
+    $('#suggestions').dataTable
+      sPaginationType: "full_numbers"
+      bJQueryUI: true
