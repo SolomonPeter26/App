@@ -72,13 +72,7 @@ class BooksController < ApplicationController
               end
         end
         @bks=@bks.uniq
-          puts '=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-='          
-          puts @i_lb
-          puts '=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-='          
-          puts @bks
           @res =  @bks - @i_lb
-          puts '=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-='          
-          puts @res
 end
 
   # POST /books
