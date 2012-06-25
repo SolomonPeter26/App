@@ -11,35 +11,58 @@
         <ul class="nav">
           <li><%= link_to "Logout", logout_path %></li>
           <li><%= link_to 'Like It??', edit_book_path(@book) %></li>
-          <li><%= link_to 'Back', books_path %></li>
+          <li><%= link_to 'Home', books_path %></li>
         </ul>
       </div>
 
     </div>
   </div>
 </div>
-<p>
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="span8">
+      <br /><br /> 
+<h3>
   <b>Title:</b>
   <%= @book.title %>
-</p>
+</h3>
 
-<p>
+<h3>
   <b>Isbn 10:</b>
   <%= @book.ISBN_10 %>
-</p>
+</h3>
 
-<p>
+<h3>
   <b>Authors:</b>
   <%= @book.authors %>
-</p>
+</h3>
 
-<p>
+<h3>
   <b>Pages:</b>
   <%= @book.pages %>
-</p>
+</h3>
 
-<p>
+<h3>
   <b>Weight:</b>
   <%= @book.weight %>
-</p>
+</h3>
+
+      </div>
+      <div class="span4">
+      <% @ar.each do |s| %>
+        <h1><%= s.username %>
+        </h1>
+      <% end %>
+      <h3>liked this book...</h3>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
 

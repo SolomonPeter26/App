@@ -40,7 +40,10 @@ class BooksController < ApplicationController
   # GET /books/1.json
   def show
     @book = Book.find(params[:id])
-    flash[:notice] = "User Successfully Logged In."
+    @ar=[]
+    @book.users.each do |g|
+        @ar << g
+    end
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @book }
