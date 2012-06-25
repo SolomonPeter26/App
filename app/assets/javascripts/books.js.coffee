@@ -15,3 +15,8 @@ jQuery ->
     $('#suggestions').dataTable
       sPaginationType: "full_numbers"
       bJQueryUI: true
+      
+jQuery ->
+    $('#recommend').dataTable
+      sPaginationType: "full_numbers"
+      bJQueryUI: true

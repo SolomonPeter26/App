@@ -10,7 +10,8 @@
       <div class="nav-collapse">
         <ul class="nav">
           <li><%= link_to "Logout", logout_path %></li>
-          <li><%= link_to 'Back', books_path %></li>
+          <li><%= link_to 'Home', books_path %></li>
+          
         </ul>
       </div>
 
@@ -51,6 +52,7 @@
                  </tr>
               </thead>
               <tbody>
+                  
                   <% @res.each do |book| %>
                     <tr class = "telements">
                       <td class="rows"><%= link_to(book.title, book) %></td>

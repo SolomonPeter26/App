@@ -20,7 +20,8 @@
 
   <div class="container">
     <div class="row">
-      <div class="span8">
+      <div class="span7">
+      <br /><br /> 
       <table class = "display" align="left" id="books">
     <thead>
       <tr>
@@ -39,8 +40,22 @@
 </table>
 
       </div>
-      <div class="span4">
+      <div class="span5">
       <h1>Suggestions for you </h1>
+      <table class = "display" align="left" id="recommend">
+    <thead>
+      <tr>
+        <th>Title</th>
+       </tr>
+    </thead>
+    <tbody>
+        <% @res.each do |book| %>
+          <tr class = "telements">
+            <td class="rows"><%= link_to(book.title, book) %></td>
+          </tr>
+        <% end %>
+    </tbody>
+</table>
       </div>
     </div>
   </div>

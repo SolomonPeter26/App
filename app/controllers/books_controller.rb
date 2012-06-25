@@ -5,6 +5,31 @@ class BooksController < ApplicationController
   def index
     @books = Book.all
     @user = User.find_by_id(session["user_id"])
+    
+      usr=@user
+     @i_lb=[] # Array I liked Books
+        @u_lb=[] # Array users like a particular book
+        usr.books.each do |lik_bks|
+              @i_lb << lik_bks
+              lik_bks.users.each do |usl|
+                    if(usl.username != usr.username )
+                      @u_lb << usl
+                    end
+              @u_lb=@u_lb.uniq
+              @bks=[]
+              end
+              @u_lb.each do |b|
+                b.books.each do |bk|
+                  @bks << bk
+                end
+              end
+        end
+        @res=[]
+        if(@bks!=nil)
+          @bks=@bks.uniq
+          @res =  @bks - @i_lb
+      end
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @books }

@@ -45,7 +45,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        flash[:notice] = "Thank you for signing up! You are now logged in."
+        flash[:notice] = "Thank you for signing up! Please Login to use the website"
         format.html { redirect_to @user }
 #        format.json { render json: @user, status: :created, location: @user }
       else

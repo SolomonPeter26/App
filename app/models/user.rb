@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   attr_accessible :username
-  validates :username, :presence => true
+  validates :username, :presence => true, :uniqueness => true
   
   has_and_belongs_to_many :books
   def self.authenticate(username)
