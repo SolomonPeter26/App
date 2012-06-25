@@ -1,0 +1,252 @@
+-----
+Agile web development with rails
+9781934356548
+
+[{"url"=>"http://openlibrary.org/authors/OL2727120A/Sam_Ruby", "name"=>"Sam Ruby"}]
+451
+
+-----
+Java
+9780072230734
+["0072230738"]
+[{"url"=>"http://openlibrary.org/authors/OL57775A/Herbert_Schildt", "name"=>"Herbert Schildt"}]
+1000
+2.8 pounds
+-----
+Right ho, Jeeves
+9780091676803
+["0091676800"]
+[{"url"=>"http://openlibrary.org/authors/OL136197A/P._G._Wodehouse", "name"=>"P. G. Wodehouse"}]
+234
+
+-----
+Software Engineering Software Engineering
+9780071240833
+["0071240837"]
+[{"url"=>"http://openlibrary.org/authors/OL548592A/Roger_S._Pressman", "name"=>"Roger S. Pressman"}]
+
+
+-----
+Wings of Fire
+9788173711466
+["8173711461"]
+
+180
+10.6 ounces
+-----
+The hitchhiker's guide to the galaxy
+9780345391803
+["0345391802"]
+[{"url"=>"http://openlibrary.org/authors/OL272947A/Douglas_Adams", "name"=>"Douglas Adams"}]
+216
+
+-----
+State of Fear
+9780739448151
+["0739448153"]
+[{"url"=>"http://openlibrary.org/authors/OL5949173A/Michael_Crichton", "name"=>"Michael Crichton"}]
+
+2.4 pounds
+-----
+Fermat's Last Theorem
+9780385319461
+["0385319460"]
+[{"url"=>"http://openlibrary.org/authors/OL223863A/Amir_D._Aczel", "name"=>"Amir D. Aczel"}]
+160
+
+-----
+The Godfather
+9780451167712
+["0451167716"]
+[{"url"=>"http://openlibrary.org/authors/OL188486A/Puzo_Mario", "name"=>"Puzo, Mario"}]
+444
+
+-----
+Psychology of Science
+9780895269720
+["0895269724"]
+[{"url"=>"http://openlibrary.org/authors/OL2905794A/Abraham_Harold_Maslow", "name"=>"Abraham Harold Maslow"}]
+
+
+-----
+Train to Pakistan
+9780802132215
+["0802132219"]
+[{"url"=>"http://openlibrary.org/authors/OL2851A/Khushwant_Singh", "name"=>"Khushwant Singh"}]
+181
+7.2 ounces
+-----
+The kite runner
+9781594480003
+["1594480001"]
+[{"url"=>"http://openlibrary.org/authors/OL1412764A/Khaled_Hosseini", "name"=>"Khaled Hosseini"}]
+371
+
+-----
+A Thousand Splendid Suns
+9781594489501
+["1594489505"]
+[{"url"=>"http://openlibrary.org/authors/OL1412764A/Khaled_Hosseini", "name"=>"Khaled Hosseini"}]
+384
+1.3 pounds
+-----
+The Da Vinci code
+9780552149518
+["0552149519"]
+[{"url"=>"http://openlibrary.org/authors/OL39307A/Dan_Brown", "name"=>"Dan Brown"}]
+560
+10.6 ounces
+-----
+The Undiscovered Self
+9780451217325
+["0451217322"]
+[{"url"=>"http://openlibrary.org/authors/OL2677210A/Carl_Gustav_Jung", "name"=>"Carl Gustav Jung"}]
+112
+
+-----
+The portable Jung
+9780140150704
+["0140150706"]
+[{"url"=>"http://openlibrary.org/authors/OL17370A/Carl_Gustav_Jung", "name"=>"Carl Gustav Jung"}, {"url"=>"http://openlibrary.org/authors/OL6871853A/C._G._Jung", "name"=>"C. G. Jung"}]
+659
+
+-----
+Man and His Symbols
+9780385052214
+["0385052219"]
+[{"url"=>"http://openlibrary.org/authors/OL2677210A/Carl_Gustav_Jung", "name"=>"Carl Gustav Jung"}, {"url"=>"http://openlibrary.org/authors/OL7023330A/Carl_G._Jung", "name"=>"Carl G. Jung"}]
+320
+
+-----
+A  place of hiding
+9780553582376
+["0553582372"]
+[{"url"=>"http://openlibrary.org/authors/OL26753A/Elizabeth_George", "name"=>"Elizabeth George"}, {"url"=>"http://openlibrary.org/authors/OL6773701A/Elizabeth_George", "name"=>"Elizabeth George"}, {"url"=>"http://openlibrary.org/authors/OL6806099A/Elizabeth_George", "name"=>"Elizabeth George"}]
+782
+
+-----
+Day of the Jackal
+9780099552710
+["009955271X"]
+[{"url"=>"http://openlibrary.org/authors/OL4356578A/Frederick_Forsyth", "name"=>"Frederick Forsyth"}]
+416
+9.4 ounces
+-----
+The Pothunters and Other School Stories
+9780140080797
+["0140080791"]
+[{"url"=>"http://openlibrary.org/authors/OL136197A/P._G._Wodehouse", "name"=>"P. G. Wodehouse"}]
+384
+8 ounces
+-----
+Sphere
+9780345353146
+["0345353145"]
+[{"url"=>"http://openlibrary.org/authors/OL5949173A/Michael_Crichton", "name"=>"Michael Crichton"}]
+384
+6.9 ounces
+-----
+Rising Sun
+9780345380371
+["0345380371"]
+[{"url"=>"http://openlibrary.org/authors/OL5949173A/Michael_Crichton", "name"=>"Michael Crichton"}]
+416
+7 ounces
+-----
+The great train robbery
+9780553024241
+["0553024248"]
+[{"url"=>"http://openlibrary.org/authors/OL5949173A/Michael_Crichton", "name"=>"Michael Crichton"}]
+300
+
+-----
+Practical Ruby Gems
+9781590598115
+["1590598113"]
+[{"url"=>"http://openlibrary.org/authors/OL3116649A/David_Berube", "name"=>"David Berube"}]
+271
+15.2 ounces
+-----
+Ruby on Rails Power!
+9781598632163
+["1598632167"]
+
+448
+1.6 pounds
+-----
+Operating system concepts
+9780201061987
+["0201061988"]
+[{"url"=>"http://openlibrary.org/authors/OL1236822A/James_Lyle_Peterson", "name"=>"James Lyle Peterson"}]
+625
+
+-----
+Distributed and multi-database systems
+9780553091564
+["0553091565"]
+[{"url"=>"http://openlibrary.org/authors/OL396243A/Angelo_R._Bobak", "name"=>"Angelo R. Bobak"}]
+477
+
+-----
+Vi and Vim editors
+9781449392178
+["1449392172"]
+[{"url"=>"http://openlibrary.org/authors/OL38875A/Arnold_Robbins", "name"=>"Arnold Robbins"}]
+85
+
+-----
+GNU Emacs Pocket Reference
+9781565924963
+["1565924967"]
+[{"url"=>"http://openlibrary.org/authors/OL29978A/Debra_Cameron", "name"=>"Debra Cameron"}]
+62
+2.4 ounces
+-----
+Head First Programming
+9780596802370
+
+[{"url"=>"http://openlibrary.org/authors/OL6867889A/Paul_Barry", "name"=>"Paul Barry"}]
+406
+
+-----
+Head first Rails
+9780596515775
+["0596515774"]
+
+429
+
+-----
+Digital Fortress
+9780312263126
+["0312263120"]
+[{"url"=>"http://openlibrary.org/authors/OL39307A/Dan_Brown", "name"=>"Dan Brown"}]
+384
+9.1 ounces
+-----
+Angels & Demons
+9780743493468
+["074349346X"]
+[{"url"=>"http://openlibrary.org/authors/OL39307A/Dan_Brown", "name"=>"Dan Brown"}]
+480
+12.8 ounces
+-----
+The Discovery of India
+9780143031031
+["0143031031"]
+[{"url"=>"http://openlibrary.org/authors/OL741A/Jawaharlal_Nehru", "name"=>"Jawaharlal Nehru"}]
+656
+
+-----
+The Bourne Ultimatum (Bourne Trilogy, Book 3)
+9780553287738
+["0553287737"]
+[{"url"=>"http://openlibrary.org/authors/OL388652A/Robert_Ludlum", "name"=>"Robert Ludlum"}]
+672
+9.1 ounces
+-----
+The Bourne supremacy
+9780553263220
+["0553263226"]
+[{"url"=>"http://openlibrary.org/authors/OL388652A/Robert_Ludlum", "name"=>"Robert Ludlum"}]
+646
+
