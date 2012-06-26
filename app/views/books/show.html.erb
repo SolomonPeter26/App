@@ -56,7 +56,11 @@
         <h1><%= s.username %>
         </h1>
       <% end %>
+      <% if @ar.size == 0  %>
+        <h3><%= "No one has" %></h3>
+      <% end %>
       <h3>liked this book...</h3>
+      
       </div>
     </div>
   </div>
