@@ -10,7 +10,11 @@
       <div class="nav-collapse">
         <ul class="nav">
           <li><%= link_to "Logout", logout_path %></li>
+          <% if @fl==0 %> 
           <li><%= link_to 'Like It??', edit_book_path(@book) %></li>
+          <% elsif @fl==1 %>
+          <a class="brand" href="#">Liked!!</a>
+          <% end %>
           <li><%= link_to 'Home', books_path %></li>
         </ul>
       </div>
@@ -53,7 +57,7 @@
       </div>
       <div class="span4">
       <% @ar.each do |s| %>
-        <h1><%= s.username %>
+        <h1><%= s%>
         </h1>
       <% end %>
       <% if @ar.size == 0  %>

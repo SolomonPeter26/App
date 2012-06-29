@@ -42,7 +42,13 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     @ar=[]
     @book.users.each do |g|
-        @ar << g
+        @ar << g.username
+    end
+    user = User.find_by_id(session["user_id"])
+    @fl=1
+    s = @ar.select {|a| a.match(user.username)}
+    if(s.size==0)
+      @fl=0
     end
     respond_to do |format|
       format.html # show.html.erb
