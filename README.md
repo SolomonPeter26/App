@@ -8,3 +8,8 @@ User may
 
 Only Username required to use the website
 
+To install:
+1)cd to folder
+2)bundle install
+3)rake db:migrate
+4)rake db:seed
